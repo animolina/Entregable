@@ -22,7 +22,7 @@ export default function Item(props) {
 
   const disminuirStock = () => {
     if (cantidadStock > 0) {
-      setCantidadStock(cantidadStock - 1);
+      setCantidadStock((prev) => prev - 1);
       aumentarContador();
     }
   };

@@ -15,7 +15,7 @@ function App() {
 
   //MÉTODOS
   const aumentarCantidad = () => {
-    setElementosComprados(elementosComprados + 1);
+    setElementosComprados((prev) => prev + 1);
   };
   //RETURN
   return (
